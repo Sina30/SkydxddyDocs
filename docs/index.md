@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Madd's Stuffs Documentation"
+  name: "Skydxddy Stuffs Documentation"
   tagline: "Installation guides, configuration references, and API documentation for MaddStuff resources."
   actions:
     - theme: brand
