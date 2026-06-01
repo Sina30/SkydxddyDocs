@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Madd's Stuffs Documentation"
-  tagline: "Installation guides, configuration references, and API documentation for MaddStuff resources."
+  name: "Skydxddy Stuffs Documentation"
+  tagline: "Installation guides, configuration references, and API documentation for Skydxddy resources."
   actions:
     - theme: brand
       text: Getting Started
@@ -14,7 +14,7 @@ hero:
 
 features:
   - title: Installation Guides
-    details: Step-by-step setup instructions for all MaddStuff resources.
+    details: Step-by-step setup instructions for all Skydxddy resources.
   - title: Configuration Reference
     details: Detailed explanations of configuration options and customization.
   - title: API & Events
