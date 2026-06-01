@@ -1,4 +1,4 @@
-# MaddStuff Docs
+# Skydxddy Docs
 
 Documentation for Skydxddy projects.
 
