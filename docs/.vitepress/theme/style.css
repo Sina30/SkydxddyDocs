@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/**
+ * Deep Emerald & Glass Theme Overrides
+ */
+
+:root {
+  /* Base typography */
+  --vp-font-family-base: 'Inter', sans-serif;
+  
+  /* Brand colors (Emerald) */
+  --vp-c-brand-1: #059669;
+  --vp-c-brand-2: #10b981;
+  --vp-c-brand-3: #34d399;
+  --vp-c-brand-soft: rgba(5, 150, 105, 0.16);
+
+  /* Background colors (Deep Dark Greens/Charcoal) */
+  --vp-c-bg: #0a0f0d;
+  --vp-c-bg-alt: #111916;
+  --vp-c-bg-elv: #161e1a;
+  --vp-c-bg-soft: #1e2a24;
+  --vp-c-bg-mute: #293830;
+
+  /* Text colors */
+  --vp-c-text-1: rgba(255, 255, 255, 0.9);
+  --vp-c-text-2: rgba(255, 255, 255, 0.7);
+  --vp-c-text-3: rgba(255, 255, 255, 0.5);
+
+  /* Borders */
+  --vp-c-border: rgba(255, 255, 255, 0.05);
+  --vp-c-divider: rgba(255, 255, 255, 0.05);
+
+  /* Button Overrides */
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+}
+
+/* Force dark mode behavior since this is a dark theme by default */
+html {
+  color-scheme: dark;
+}
+
+/* Mesh Gradient Background */
+body {
+  background-color: var(--vp-c-bg);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(5, 150, 105, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.05), transparent 25%);
+  background-attachment: fixed;
+}
+
+/* Glassmorphism Navigation */
+.VPNavBar {
+  background-color: rgba(10, 15, 13, 0.7) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.VPNavBar.has-sidebar {
+  background-color: rgba(10, 15, 13, 0.7) !important;
+}
+
+/* Glassmorphism Sidebar */
+.VPSidebar {
+  background-color: rgba(17, 25, 22, 0.5) !important;
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glassmorphism Cards & Content blocks */
+.VPHomeFeatures .VPLink, 
+.vp-doc div[class*="language-"],
+.custom-block {
+  background-color: rgba(22, 30, 26, 0.6) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.VPHomeFeatures .VPLink:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Tabs Plugin styling overrides to match theme */
+.tabs-component {
+  background-color: transparent !important;
+}
+.tabs-component-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.tabs-component-tab-a {
+  color: var(--vp-c-text-2) !important;
+}
+.tabs-component-tab.is-active .tabs-component-tab-a {
+  color: var(--vp-c-brand-1) !important;
+}
+.tabs-component-panels {
+  background-color: rgba(22, 30, 26, 0.4) !important;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: none;
+}
+
+/* Homepage Hero Button Polish */
+.VPHero .VPButton.brand {
+  box-shadow: 0 4px 14px 0 rgba(5, 150, 105, 0.39);
+  border-radius: 8px;
+}
+.VPHero .VPButton.brand:hover {
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.23);
+  background-color: var(--vp-c-brand-2);
+}
+
+.VPHero .VPButton.alt {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+}
+.VPHero .VPButton.alt:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
