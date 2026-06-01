@@ -1,0 +1,24 @@
+{
+  "name": "maddstuff-docs",
+  "version": "1.0.0",
+  "description": "Documentation for MaddStuff",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "vitepress": "^2.0.0-alpha.16"
+  },
+  "dependencies": {
+    "@red-asuka/vitepress-plugin-tabs": "^0.0.4",
+    "markdown-it-async": "^2.2.0",
+    "markitdown-ts": "^0.0.10",
+    "vue3-tabs-component": "^1.3.7"
+  }
+}
