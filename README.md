@@ -1,6 +1,6 @@
 # MaddStuff Docs
 
-Documentation for MaddStuff projects.
+Documentation for Skydxddy projects.
 
 ## Getting Started
 
