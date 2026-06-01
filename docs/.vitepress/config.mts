@@ -3,7 +3,7 @@ import tabsPlugin from "@red-asuka/vitepress-plugin-tabs";
 import MarkdownIt from 'markdown-it';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/",
+  base: "/SkydxddyDocs/",
   title: "Skydxddy Stuff",
   description:
     "Official documentation for Skydxddy RedM/Fivem resources, including installation guides, configuration references, and API documentation.",
