@@ -1,77 +1,77 @@
 <script setup>
 import { useRouter } from 'vitepress'
 const router = useRouter()
-const scripts = [
+const basic = [
   {
-    title: 'Interaction System',
+    title: 'apache2 php mariadb',
     description: 'The most optimized and immersive interaction system for RedM servers.',
-    link: '/scripts/interaction/',
+    link: '/basic/apache2-php-mariadb/',
     icon: '⚡',
     tag: 'Popular'
   },
   {
-    title: 'Case System',
+    title: 'debugprint',
     description: 'Premium CS2-style case opening and trading system with weighted loot.',
-    link: '/scripts/cases/',
+    link: '/basic/debugprint/',
     icon: '📦',
     tag: 'Hot'
   },
   {
-    title: 'Blackjack',
+    title: 'esx getsharedobject',
     description: 'Professional casino-grade blackjack with multi-player support.',
-    link: '/scripts/blackjack/',
+    link: '/basic/esx-getsharedobject/',
     icon: '🃏',
     tag: 'Casino'
   },
   {
-    title: 'Roulette',
+    title: 'fivem server debian',
     description: 'Realistic roulette system with physics-based spins and accurate payouts.',
-    link: '/scripts/roulette/',
+    link: '/basic/fivem-server-debian/',
     icon: '🎰',
     tag: 'Casino'
   },
   {
-    title: 'Racing System',
+    title: 'heidisql',
     description: 'Complete racing management with tracks, timing, and leaderboards.',
-    link: '/scripts/racing/',
+    link: '/basic/heidisql/',
     icon: '🏎️',
     tag: 'Pro'
   },
   {
-    title: 'Emoji & Minigames',
+    title: 'teamspeak linux',
     description: 'Floating emojis, tarot reading, and quick social minigames.',
-    link: '/scripts/emoji/',
+    link: '/basic/teamspeak-linux/',
     icon: '😄',
     tag: 'Social'
   },
   {
-    title: 'Grave Robbery',
+    title: 'txadmin artifacts',
     description: 'High-risk criminal activity with police alerts and NPC selling.',
-    link: '/scripts/graverobbery/',
+    link: '/basic/txadmin-artifacts/',
     icon: '⚰️',
     tag: 'Illegal'
-  },
-  {
-    title: 'Character Details',
-    description: 'Persistent physical details and conditions for deeper roleplay.',
-    link: '/scripts/details/',
-    icon: '📖',
-    tag: 'RP'
-  },
-  {
-    title: 'Phonograph',
-    description: 'Portable music system with record making and 3D spatial audio.',
-    link: '/scripts/phonograph/',
-    icon: '🎵',
-    tag: 'Music'
-  },
-  {
-    title: 'Madd UI',
-    description: 'The core UI framework providing notifications, minigames, and dialogue.',
-    link: '/scripts/ui/',
-    icon: '🛠️',
-    tag: 'Core'
   }
+  // {
+  //   title: 'Character Details',
+  //   description: 'Persistent physical details and conditions for deeper roleplay.',
+  //   link: '/basic/details/',
+  //   icon: '📖',
+  //   tag: 'RP'
+  // },
+  // {
+  //   title: 'Phonograph',
+  //   description: 'Portable music system with record making and 3D spatial audio.',
+  //   link: '/basic/phonograph/',
+  //   icon: '🎵',
+  //   tag: 'Music'
+  // },
+  // {
+  //   title: 'Madd UI',
+  //   description: 'The core UI framework providing notifications, minigames, and dialogue.',
+  //   link: '/basic/ui/',
+  //   icon: '🛠️',
+  //   tag: 'Core'
+  // }
 ]
 
 const navigate = (link) => {
@@ -81,7 +81,7 @@ const navigate = (link) => {
 
 <template>
   <div class="script-gallery">
-    <div v-for="script in scripts" :key="script.title" class="script-card" @click="navigate(script.link)">
+    <div v-for="script in basic" :key="script.title" class="script-card" @click="navigate(script.link)">
       <div class="card-header">
         <span class="script-icon">{{ script.icon }}</span>
         <span v-if="script.tag" class="script-tag">{{ script.tag }}</span>

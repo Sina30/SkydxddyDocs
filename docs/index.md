@@ -8,9 +8,9 @@ hero:
     - theme: brand
       text: Getting Started
       link: /getting-started
-    - theme: alt
-      text: Browse Scripts
-      link: /scripts
+    # - theme: alt
+    #   text: Browse Basic
+    #   link: /basic
 
 features:
   - title: Installation Guides
